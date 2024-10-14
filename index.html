@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Linux: O Kernel</title>
+    <style>
+      body {
+        background-color: darkgrey;
+      }
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h2 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h3 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      p {
+        font-family: "Courier New", Courier, monospace;
+      }
+      ul {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .block {
+        margin-top: 3%;
+        background-color: whitesmoke;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.253);
+      }
+      .conteudo {
+        margin-left: 5%;
+      }
+      .imagem {
+        width: 75%;
+        height: 10%;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.253);
+        margin: 0 13%;
+      }
+    </style>
+  </head>
+  <body style="width: 70%; margin: 0 auto">
+    <div>
+      <h1>Linux não é o sistema operacional</h1>
+      <p>
+        Linux não é o sistema operacional em si, no sentido tradicional. Linux é
+        uma camada de software chamada <strong>kernel</strong>, que é
+        responsável pela comunicação direta entre os inúmeros hardwares
+        diferentes e o software que vier por cima desse kernel (o resto do
+        sistema operacional e suas aplicações). <br />
+        Esse <strong>kernel</strong> foi desenvolvido inicialmente por
+        <em>Linus Torvalds</em> e posteriormente distribuído na licença de
+        código aberto, assim permitindo contribuição da comunidade open-source.
+      </p>
+    </div>
+    <hr />
+    <div class="block">
+      <div class="conteudo">
+        <h1>Composição do Kernel</h1>
+        <p>
+          Linux é escrito nas seguintes linguagens de programação e nas
+          respectivas proporções:
+        </p>
+        <ul>
+          <li>C: 97%</li>
+          <li>C++, Assembly, Perl: >3%</li>
+        </ul>
+        <p>
+          Em 2021, no total, apenas o kernel já era composto por mais de 30
+          milhões de linhas de código. Para pra pensar! Deve ter sido no mínimo
+          difícil, especialmente aos meus olhos, já que não consigo sequer
+          escrever um programa decente em Python!
+        </p>
+      </div>
+    </div>
+    <div class="block">
+      <div class="conteudo">
+        <h1>Ideias por trás do Linux como OS</h1>
+        <p>
+          Para facilitar, usaremos a distro Ubuntu para exemplificar o workflow
+          rotineiro do sistema.
+        </p>
+        <h2>Login</h2>
+        <p>
+          Por incrível que pareça, tudo começa nessa parte tão trivial do fluxo
+          de trabalho. Antigamente, por conta dos preços elevados dos
+          computadores, os funcionários de uma empresa utilizavam o mesmo
+          computador (às vezes simultâneamente) no dia-a-dia. Como cada
+          funcionário possui uma função diferente, tipicamente, e cada um tem
+          níveis de privilégio à informação diferentes, fazia-se necessário
+          separar os ambientes de trabalho digitais desses usuários para melhor
+          organização e segurança da informação. A identidade de um usuário no
+          Linux se dá por 2 credenciais principais: Nome de usuário e senha.
+          Para acessar o seu usuário, intuitivamente, basta inserir essas duas
+          credenciais e
+          <em>voilà</em>.
+        </p>
+        <h2>Níveis de Acesso e Privilégios</h2>
+        <p>
+          Diferentemente do Windows, sistemas baseados em Linux permitem uma
+          manipulação mais liberal e profunda pelo usuário (especificamente o
+          que possui root access) do próprio sistema. É possível manipular todos
+          os arquivos montados do sistema. Um poder ilimitado, tanto que você,
+          como superuser, consegue limitar o poder de outros usuários do mesmo
+          computador.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <h2 style="text-align: center">Sistema de Arquivos</h2>
+    <img
+      src="assets/images/hierarquia.webp"
+      alt="Estrutura dos Diretórios Linux"
+      class="imagem"
+    />
+  </body>
+</html>
